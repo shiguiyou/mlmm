@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wanquan.mlmmx.mlmm.xmly.activity.PlayCollectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="PlayCollectionActivity_Bank">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@mipmap/backicon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="返回"
+                    android:textColor="#fa4c9b"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:text="我的收藏"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ebebeb"/>
+
+        <LinearLayout
+            android:id="@+id/PlayCollection_ll"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="150dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:text="亲，你还没有收藏哦~"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@mipmap/noimg"/>
+
+        </LinearLayout>
+
+        <com.wanquan.mlmmx.mlmm.view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#b4b4b4"
+                    android:visibility="gone"/>
+
+                <com.wanquan.mlmmx.mlmm.view.MyListView
+                    android:id="@+id/PlayCollection_ListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbars="none"/>
+
+                <com.wanquan.mlmmx.mlmm.view.MyListView
+                    android:id="@+id/PlayCollection_ListView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbars="none">
+
+                </com.wanquan.mlmmx.mlmm.view.MyListView>
+
+
+            </LinearLayout>
+        </com.wanquan.mlmmx.mlmm.view.MyScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/PlayListActivity_Down_RL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#716b6b"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/PlayListActivity_Down_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/minimusic"/>
+
+            <TextView
+                android:id="@+id/PlayListActivity_Down_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="150dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/PlayListActivity_Down_Play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="75dp"
+                android:src="@mipmap/minisuspend"/>
+
+            <ImageView
+                android:id="@+id/PlayListActivity_Down_PlayNext"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/mininext"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

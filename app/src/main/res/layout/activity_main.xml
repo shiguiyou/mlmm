@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.wanquan.mlmmx.mlmm.view.NoScrollViewPager
+        android:id="@+id/MainActivity_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14">
+    </com.wanquan.mlmmx.mlmm.view.NoScrollViewPager>
+
+    <include
+        layout="@layout/merge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"/>
+
+</LinearLayout>

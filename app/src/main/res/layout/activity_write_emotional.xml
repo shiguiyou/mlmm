@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="WriteEmotional_Bank">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/backicon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="#fa4c9b"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:text="写日志"
+            android:textColor="#333333"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b4b4b4"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/WriteEmotional_Content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="记录您的心情..."
+                    android:paddingLeft="12dp"
+                    android:paddingTop="5dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50cccccc"/>
+
+            <LinearLayout
+                android:id="@+id/WriteEmotional_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@mipmap/voicerecording"/>
+
+                <TextView
+                    android:id="@+id/WriteEmotional_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="点击录音"
+                    android:textColor="#333333"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical">
+
+                    <com.wanquan.mlmmx.mlmm.voice.CommonSoundItemView
+                        android:id="@+id/pp_sound_item_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/pp_iv_abandon_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/pp_sound_item_view"
+                        android:layout_alignTop="@id/pp_sound_item_view"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginTop="-10dp"
+                        android:src="@drawable/ar_delete_audio"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50cccccc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img1"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Delete1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/cancels"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img2"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Delete2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/cancels"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img3"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Delete3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/cancels"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img4"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/upimg_logo"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img5"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Delete5"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/cancels"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel6"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img6"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Delete6"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/cancels"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img7"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Delete7"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/cancels"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Write_Emotional_Rel8"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Write_Emotional_Img8"
+                            android:layout_width="95dp"
+                            android:layout_height="85dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/upimg_logo"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50cccccc"/>
+
+            <TextView
+                android:id="@+id/WriteEmotional_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/write_bgs"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

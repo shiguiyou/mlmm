@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:fitsSystemWindows="true">
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/home_myPhotoUploading_returnTop"
+        style="@style/top_APP"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/home_myPhotoUploading_return"
+            style="@style/text_ww_16_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/home_myPhotoUploading_albumsName"
+            style="@style/text_ww_20_white"
+            android:layout_centerInParent="true"
+            android:text="所有照片"/>
+
+        <LinearLayout
+            android:id="@+id/home_myPhotoUploading_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传("
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/home_myPhotoUploading_uploadNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/replace_photo_album_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="上传"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/replace_photo_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="上传"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/home_myPhotoUploading_preview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:text="预览"
+        android:textColor="#333333"
+        android:textSize="18sp"/>
+
+    <GridView
+        android:id="@+id/home_myPhotoUploading_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/home_myPhotoUploading_preview"
+        android:layout_below="@id/home_myPhotoUploading_returnTop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:horizontalSpacing="4dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="4dp"/>
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="没有图片"
+        android:textColor="@color/text_black"/>
+</RelativeLayout>

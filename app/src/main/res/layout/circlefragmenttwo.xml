@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/CircleFragmentTwo_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="我关注的圈子"
+        android:textColor="#5bc1a5"
+        android:textSize="16sp"/>
+
+
+    <ListView
+        android:id="@+id/CircleFragmentTwo_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@null">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/CircleFragmentTwo_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/CircleFragmentTwo_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="亲，请先登录哦~"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/noimg"/>
+
+        <TextView
+            android:id="@+id/CircleFragmentTwo_Tv"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/phone_bg"
+            android:gravity="center"
+            android:text="点击登录"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

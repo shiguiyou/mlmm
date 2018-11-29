@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:background="#fb8b01" />
+
+        <TextView
+            android:id="@+id/item_group_cloud_cat_parenting_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:textColor="#656565" />
+    </LinearLayout>
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/item_group_cloud_cat_parenting_RecyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:scrollbars="none" />-->
+    <com.wanquan.mlmmx.mlmm.phone.MyGridView
+        android:id="@+id/item_group_cloud_cat_parenting_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:numColumns="3">
+
+    </com.wanquan.mlmmx.mlmm.phone.MyGridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="10dp"
+        android:background="#f4f5f6" />
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- 定义ViewFlipper组件 -->
+    <ViewFlipper
+        android:id="@+id/GrowUpAppraisalStart_ViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#4fcf72">
+
+                <ImageView
+                    android:id="@+id/GrowUpAppraisalStart_Bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/canceltest" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@mipmap/test_tree" />
+
+                <TextView
+                    android:id="@+id/GrowUpAppraisalStart_TV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="100dp"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="#ffffff"
+                    android:letterSpacing="0.2"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/GrowUpAppraisalStart_TV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="150dp"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/GrowUpAppraisalStart_TV3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/group_up_bg"
+                android:gravity="center"
+                android:text="能"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/GrowUpAppraisalStart_TV4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/group_up_bg"
+                android:gravity="center"
+                android:text="还不能"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+
+    </ViewFlipper>
+
+    <ProgressBar
+        android:id="@+id/GrowUpAppraisalStart_ProgressBar_One"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:max="120"
+        android:progress="10"
+        android:progressDrawable="@drawable/my_progress" />
+</RelativeLayout>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wanquan.mlmmx.mlmm.activity.IntegralRuleActivity">
+
+    <include
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"/>
+
+    <WebView
+        android:id="@+id/IntegralRule_WB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="      1.兑换礼券使用规则和使用期限请注意查看兑换页信息，非技术故障导致礼券不能使用，不退还兑换积分。"-->
+    <!--android:textColor="#333333"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:text="      2.实物礼品兑换请务必认真填写真实收货信息； 若因地址不详、联系号码错误、停机等个人原因导致收货人未签收而退货，概不补发，积分不退还。礼物非质量问题不退换。"-->
+    <!--android:textColor="#333333"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:text="      3.除商品本身不能正常兑换外，商品一经兑换，一律不退还积分，请用户兑换前仔细参照使用规则、使用说明、有效期等重要信息。"-->
+    <!--android:textColor="#333333"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:text="      4.对于每一位用户限兑换一次的商品，若发现多个用户账号使用相同手机号或收货地址兑换同一商品，则自动取消订单，被扣除积分不退还。"-->
+    <!--android:textColor="#333333"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:text="      5.通过非法途径获得积分后进行的正常兑换行为，或不按商品使用规则进行兑换，美丽妈妈有权不提供服务。"-->
+    <!--android:textColor="#333333"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:text="      6.凡以不正当手段（包括但不限于作弊、扰乱系统、实施网络攻击等）进行兑换，美丽妈妈有权终止该次兑换。"-->
+    <!--android:textColor="#333333"/>-->
+</LinearLayout>

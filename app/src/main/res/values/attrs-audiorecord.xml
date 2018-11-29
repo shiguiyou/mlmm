@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LineWaveVoiceView">
+        <attr name="voiceLineColor" format="color"/>
+        <attr name="voiceLineWidth" format="dimension"/>
+        <attr name="voiceTextColor" format="color"/>
+        <attr name="voiceTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LineChart">
+        <attr name="StrokeWidth" format="dimension"/>
+        <attr name="FontSize" format="dimension"/>
+        <attr name="PointRadius" format="dimension"/>
+        <attr name="DarkColor" format="color"/>
+        <attr name="LightColor" format="color"/>
+        <attr name="DateTextColor" format="color"/>
+        <attr name="ShapeColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="HorizontalLineView">
+        <attr name="linecolor" format="color"/>
+        <attr name="textsizedefault"  format="dimension"/>
+        <attr name="textsizeselected"  format="dimension"/>
+        <attr name="textcolorselected" format="color"/>
+        <attr name="textcolordefault" format="color"/>
+        <attr name="bg" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@drawable/delete_dialog"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cart_delete_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="注意"
+            android:textColor="#333333"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/cart_delete_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="亲爱的妈妈，更换状态的话，宝宝之前的信息就没有啦，一定要慎重考虑啊！"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E5E9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+        <Button
+            android:id="@+id/cart_delete_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_delete_left"
+            android:text="不换啦"
+            android:textColor="#59DCE5"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E3E5E9"/>
+
+        <Button
+            android:id="@+id/cart_delete_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_delete_right"
+            android:text="还是要换"
+            android:textColor="#59DCE5"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

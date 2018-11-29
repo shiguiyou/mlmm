@@ -1,0 +1,82 @@
+package com.wanquan.mlmmx.mlmm.beans;
+
+import java.io.Serializable;
+
+/**
+ * Created by Administrator on 2018/4/26.
+ */
+
+public class APPIntegralBeans implements Serializable {
+    /**
+     * data : null
+     * dynamicKey :
+     * msg : 今天您已分享过数据！
+     * result : true
+     * resultCode : -1
+     * token :
+     */
+
+    private Object data;
+    private String dynamicKey;
+    private String msg;
+    private String result;
+    private int resultCode;
+    private String token;
+    private int extra;
+
+    public int getExtra() {
+        return extra;
+    }
+
+    public void setExtra(int extra) {
+        this.extra = extra;
+    }
+
+    public Object getData() {
+        return data;
+    }
+
+    public void setData(Object data) {
+        this.data = data;
+    }
+
+    public String getDynamicKey() {
+        return dynamicKey;
+    }
+
+    public void setDynamicKey(String dynamicKey) {
+        this.dynamicKey = dynamicKey;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
+    public int getResultCode() {
+        return resultCode;
+    }
+
+    public void setResultCode(int resultCode) {
+        this.resultCode = resultCode;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+}

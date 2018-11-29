@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/shiguiyou/Downloads/mlmm/pulltorefresh/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/shiguiyou/.android/build-cache/cec489c33c71fcec457add68ffdc2679d911185c/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/shiguiyou/Downloads/mlmm/pulltorefresh/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/shiguiyou/.android/build-cache/cec489c33c71fcec457add68ffdc2679d911185c/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/shiguiyou/Downloads/mlmm/pulltorefresh/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/shiguiyou/.android/build-cache/cec489c33c71fcec457add68ffdc2679d911185c/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/shiguiyou/Downloads/mlmm/pulltorefresh/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/shiguiyou/.android/build-cache/cec489c33c71fcec457add68ffdc2679d911185c/output/res/layout-v21/notification_action.xml"
+    }
+]

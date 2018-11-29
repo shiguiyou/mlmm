@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wanquan.mlmmx.mlmm.xmly.activity.BabyListenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="BabyListenActivity_Bank">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@mipmap/backicon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="返回"
+                    android:textColor="#f94b99"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:text="宝宝听听"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b4b4b4"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#ffffff">
+
+            <RadioGroup
+                android:id="@+id/BabyListen_RadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/BabyListen_RadioButton1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xmlytestcolor"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="推荐"
+                    android:textColor="#f75e3a"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/BabyListen_RadioButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xmlytestcolor"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="儿歌"
+                    android:textColor="#333333"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/BabyListen_RadioButton3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xmlytestcolor"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="故事"
+                    android:textColor="#333333"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/BabyListen_RadioButton4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xmlytestcolor"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="哄睡"
+                    android:textColor="#333333"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/BabyListen_RadioButton5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xmlytestcolor"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="家教"
+                    android:textColor="#333333"
+                    android:textSize="14sp"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <com.wanquan.mlmmx.mlmm.view.NoScrollViewPager
+            android:id="@+id/BabyListen_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </com.wanquan.mlmmx.mlmm.view.NoScrollViewPager>
+
+        <RelativeLayout
+            android:id="@+id/PlayListActivity_Down_RL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#716b6b"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/PlayListActivity_Down_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/minimusic"/>
+
+            <TextView
+                android:id="@+id/PlayListActivity_Down_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="150dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/PlayListActivity_Down_Play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="75dp"
+                android:src="@mipmap/minisuspend"/>
+
+            <ImageView
+                android:id="@+id/PlayListActivity_Down_PlayNext"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/mininext"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

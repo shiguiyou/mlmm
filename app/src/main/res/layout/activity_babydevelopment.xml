@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wanquan.mlmmx.mlmm.activity.BabyDevelopmentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="BabyDevelopment_Bank">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/backicon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="#fa4c9b"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/BabyDevelopment_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:text="宝宝发育周变化"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b4b4b4"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/BabyDevelopment_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:horizontalSpacing="20dp"
+        android:scrollbars="none"/>
+
+    <!--<com.wanquan.mlmmx.mlmm.view.CenterShowHorizontalScrollView-->
+    <!--android:id="@+id/BabyDevelopment_ScrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="#ffcccc"-->
+    <!--android:scrollbars="none"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--<HorizontalScrollView-->
+    <!--android:id="@+id/BabyDevelopment_HSVScrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:fillViewport="true"-->
+    <!--android:scrollbars="none">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_marginRight="25dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<com.wanquan.mlmmx.mlmm.phone.MyGridView-->
+    <!--android:id="@+id/BabyDevelopment_GridView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:horizontalSpacing="5dp"-->
+    <!--android:numColumns="auto_fit"-->
+    <!--android:scrollbars="none"-->
+    <!--android:stretchMode="spacingWidthUniform">-->
+    <!--</com.wanquan.mlmmx.mlmm.phone.MyGridView>-->
+    <!--</LinearLayout>-->
+    <!--</HorizontalScrollView>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#50cccccc"/>
+
+    <com.wanquan.mlmmx.mlmm.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/BabyDevelopment_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:text="本周关键字"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/BabyDevelopment_TOne"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/babydevelop_bg"
+                        android:gravity="center"
+                        android:textColor="#ffffff"/>
+
+                    <TextView
+                        android:id="@+id/BabyDevelopment_TTwo"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/devip_bg"
+                        android:gravity="center"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/BabyDevelopment_ImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@mipmap/toux"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/BabyDevelopment_Center_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/BabyDevelopment_Center_Content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#6a533b"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="#cccccc"/>
+
+            <com.wanquan.mlmmx.mlmm.view.MyListView
+                android:id="@+id/BabyDevelopment_MyListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none">
+
+            </com.wanquan.mlmmx.mlmm.view.MyListView>
+        </LinearLayout>
+    </com.wanquan.mlmmx.mlmm.view.MyScrollView>
+</LinearLayout>

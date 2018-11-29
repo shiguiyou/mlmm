@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#50cccccc"/>
+
+    <TextView
+        android:id="@+id/ParentTask_Group_Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#50cccccc"/>
+
+    <com.wanquan.mlmmx.mlmm.view.MyListView
+        android:id="@+id/ParentTask_Group_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.wanquan.mlmmx.mlmm.view.MyListView>
+</LinearLayout>

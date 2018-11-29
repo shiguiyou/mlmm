@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="#ffffff"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Fragment_Item_Image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@mipmap/babyavalatar"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Fragment_Item_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="薛昌峰"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/Fragment_Item_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Fragment_Item_Attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/guanzhu_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="关注"
+            android:textColor="#df7843"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/Fragment_Item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@mipmap/circletu"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/Fragment_Item_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Fragment_Item_Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="3"
+        android:textSize="14sp"/>
+
+    <com.wanquan.mlmmx.mlmm.phone.MyGridView
+        android:id="@+id/Fragment_Item_MyGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:numColumns="3"
+        android:visibility="gone">
+
+    </com.wanquan.mlmmx.mlmm.phone.MyGridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/Fragment_Item_Img1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/Fragment_Item_Img2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/Fragment_Item_Img3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/Fragment_Item_Img4"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/Fragment_Item_Img5"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/Fragment_Item_Img6"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/Fragment_Item_LL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/Fragment_Item_Collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/collection"/>
+
+                <TextView
+                    android:id="@+id/Fragment_Item_Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="删除"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Fragment_Item_LL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/comment"/>
+
+                <TextView
+                    android:id="@+id/Fragment_Item_Comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

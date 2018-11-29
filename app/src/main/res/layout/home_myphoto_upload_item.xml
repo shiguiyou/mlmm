@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey">
+
+        <ToggleButton
+            android:id="@+id/home_myPhotoUpload_item_toggle_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_alight"
+            android:textOff="@null"
+            android:textOn="@null"/>
+
+        <ImageView
+            android:id="@+id/home_myPhotoUpload_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <CheckBox
+            android:id="@+id/home_myPhotoUpload_item_ischeck"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/checkbox_photo"
+            android:button="@null"/>
+    </RelativeLayout>
+
+</LinearLayout>

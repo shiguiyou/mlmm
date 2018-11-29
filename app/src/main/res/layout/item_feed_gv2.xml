@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/item_feedgv2_image"
+        android:layout_width="76dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/item_feedgv2_delete"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/item_feedgv2_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_toRightOf="@+id/item_feedgv2_image"
+        android:src="@drawable/sns_closeimg_icon">
+
+    </ImageView>
+</RelativeLayout>

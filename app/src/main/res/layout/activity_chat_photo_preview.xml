@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.multshows.Activity.Chat_PhotoPreView_Activity">
+
+    <RelativeLayout
+        android:id="@+id/chat_PhotoPreView_top"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/text_black">
+
+        <ImageView
+            android:id="@+id/chat_PhotoPreView_return"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/return_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预览"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_PhotoPreView_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_grey">
+
+        <Button
+            android:id="@+id/chat_PhotoPreView_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="89dp"
+            android:layout_height="39dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/border_4_blue_0"
+            android:text="发送(1)"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chat_PhotoPreView_bottom"
+        android:layout_below="@id/chat_PhotoPreView_top"
+        android:background="@color/text_black_2">
+
+        <!--<me.relex.photodraweeview.PhotoDraweeView-->
+            <!--android:id="@+id/chat_PhotoPreView_look_image"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--fresco:failureImage="@drawable/photo_loading"-->
+            <!--fresco:progressBarAutoRotateInterval="1000"-->
+            <!--fresco:progressBarImage="@drawable/photo_loading"-->
+            <!--/>-->
+    </LinearLayout>
+</RelativeLayout>

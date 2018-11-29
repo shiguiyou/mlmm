@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50fdfdfd"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.wanquan.mlmmx.mlmm.activity.PostPersonageCenterActivity">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/PostPersonageCenter_MyScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/PostPersonageCenter_LL"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@mipmap/gerenzhuyebg"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/PostPersonageCenter_Img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/PostPersonageCenter_Title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#d45a69"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/PostPersonageCenter_TV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#d45a69"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/PostPersonageCenter_TV3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/sdslv_yuan_bg"
+                    android:gravity="center"
+                    android:text="关注"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.wanquan.mlmmx.mlmm.view.MyListView
+                android:id="@+id/PostPersonageCenter_MyListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:divider="@null">
+
+            </com.wanquan.mlmmx.mlmm.view.MyListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b4b4b4" />
+        </LinearLayout>
+
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <RelativeLayout
+        android:id="@+id/PostPersonageCenter_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#00ffffff">
+
+        <LinearLayout
+            android:id="@+id/PostPersonageCenter_Bank"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="BabyActivity_Bank">
+
+            <ImageView
+                android:id="@+id/PostPersonageCenter_Bank_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/arrowwhite" />
+
+            <TextView
+                android:id="@+id/PostPersonageCenter_Bank_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/PostPersonageCenter_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="150dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#00333333"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
